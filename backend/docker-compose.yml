@@ -1,0 +1,19 @@
+
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mobilitae
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    ports: 
+      - "3307:3306"
+    volumes: 
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:
+
+  
