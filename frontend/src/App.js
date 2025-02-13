@@ -16,6 +16,7 @@ import CreationDemande from "./pages/dashboard/CreationDemande";
 import ProfilUtilisateur from "./pages/dashboard/ProfilUtilisateur";
 import DemandeAnalysee from "./pages/dashboard/DemandeAnalysee";
 import DossiersTermines from "./pages/dashboard/DossiersTermines";
+import News from "./pages/patient/News";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
         <Route path="/patient/:id" element={ <Patient/> }/>
         <Route path="/demande-analysee" element={ <DemandeAnalysee/> }/>
         <Route path="/profil" element={ <ProfilUtilisateur/> }/>
+        <Route path="/news" element={ <News/> }/>
+        <Route path="/toto" element={ <Toto/> }/>
         <Route path="*"element={<NotFound />}/>
       </Routes>
   )
