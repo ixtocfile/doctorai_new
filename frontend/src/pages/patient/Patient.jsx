@@ -156,7 +156,6 @@ function Patient() {
                 <div className="w-full h-128 overflow-auto">
                     <div className='flex flex-row py-4'>
                         <h3 className="font-bold text-xl mr-4">Patient ID: {patientData ? patientData.patient_id : ''}</h3>
-                        
                                 <h3 className="font-bold text-xl mr-4">{patientData ? patientData.patient_firstname: ''}</h3>
                                 <h3 className="font-bold text-xl mr-4">{patientData ? (patientData.patient_lastname) : ''}</h3>
                                 <h3 className="font-bold text-xl mr-4">({patientData ? patientData.patient_gender : ''})</h3>
